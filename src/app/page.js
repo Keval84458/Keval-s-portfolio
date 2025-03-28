@@ -1,9 +1,12 @@
-import Hello from "./components/hello";
+import { PageWrapper } from "@/utils";
+import HeroSection from "./components/hero-section";
 
 export default function Home() {
   return (
     <>
-      <Hello />
+      <PageWrapper>
+        <HeroSection />
+      </PageWrapper>
     </>
   );
 }
