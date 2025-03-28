@@ -5,7 +5,9 @@ import React from "react";
 const Hello = () => {
   return (
     <Box>
-      <Text color="primary.500">Tech with Keval</Text>
+      <Text color="primary.500" fontWeight="800">
+        Tech with Keval
+      </Text>
     </Box>
   );
 };
