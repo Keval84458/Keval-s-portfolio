@@ -7,7 +7,7 @@ const ChannelCards = () => {
   const youtubeDetails = [
     {
       id: "NextJs",
-      thumbnail: "/assets/youtubeThumbnails/Next Js.png",
+      thumbnail: "/assets/youtubeThumbnails/Next js.png",
       title: "Next Js full course 2025",
       link: "https://youtube.com/playlist?list=PLidl7_qEMHZMgVzHrxR6gIKec7_VJIQ6z&si=mk67DrDv2o4hJEBR",
     },
