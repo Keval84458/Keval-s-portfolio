@@ -71,6 +71,8 @@ const Navbar = () => {
           onClick={onOpen}
         />
         <Box
+          as={Link}
+          href={PAGE_PATH_KEYS.HOME}
           fontWeight="bold"
           color="white"
           fontSize={{ base: "2xl" }}
