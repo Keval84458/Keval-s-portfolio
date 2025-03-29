@@ -1,11 +1,11 @@
-import { PageWrapper } from "@/utils";
-import { Text } from "@chakra-ui/react";
 import React from "react";
+import { PageWrapper } from "@/utils";
+import SkillTechnologiesCard from "./_layouts/skill-technologies-card";
 
 const SkillTechnologies = () => {
   return (
     <PageWrapper>
-      <Text>SkillTechnologies</Text>
+      <SkillTechnologiesCard />
     </PageWrapper>
   );
 };

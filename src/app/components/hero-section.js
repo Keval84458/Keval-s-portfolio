@@ -1,7 +1,7 @@
 "use client";
+import React from "react";
 import { Box, Text, Image } from "@chakra-ui/react";
 import Link from "next/link";
-import React from "react";
 
 const HeroSection = () => {
   return (
