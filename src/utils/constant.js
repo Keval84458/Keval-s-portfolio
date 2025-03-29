@@ -1,3 +1,4 @@
+"use client";
 export const PAGE_PATH_KEYS = {
   HOME: "/",
   ABOUT: "/about",
