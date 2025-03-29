@@ -1,11 +1,11 @@
+import React from "react";
 import { PageWrapper } from "@/utils";
 import { Text } from "@chakra-ui/react";
-import React from "react";
-
+import ContactForm from "./_layouts/contact-form";
 const Contact = () => {
   return (
     <PageWrapper>
-      <Text>Contact</Text>
+      <ContactForm />
     </PageWrapper>
   );
 };
