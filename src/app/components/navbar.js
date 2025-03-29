@@ -78,7 +78,7 @@ const Navbar = () => {
         <Box
           fontWeight="bold"
           color="white"
-          fontSize={{ base: "1xl" }}
+          fontSize={{ base: "2xl" }}
           mx="1rem"
         >
           FRONTEND DEVELOPER
