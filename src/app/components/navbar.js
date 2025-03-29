@@ -47,11 +47,6 @@ export const menuButton = [
     name: "RESUME",
     route: PAGE_PATH_KEYS.RESUME,
   },
-
-  {
-    name: "CERTIFICATIONS & COURSES",
-    route: PAGE_PATH_KEYS.CERTIFICATIONS_COURSES,
-  },
 ];
 
 const Navbar = () => {
@@ -91,7 +86,7 @@ const Navbar = () => {
           <DrawerCloseButton />
           <DrawerBody>
             <Text fontWeight="extrabold" textAlign="center" fontSize="150">
-              Menu
+              FRONTEND DEVELOPER
             </Text>
             <VStack spacing={4} mt={10}>
               {menuButton.map((menu, inx, arr) => {
@@ -103,6 +98,12 @@ const Navbar = () => {
                       as={Link}
                       href={menu.route}
                       bg="white.100"
+                      _hover={{
+                        bg: "white.100",
+                      }}
+                      _disabled={{
+                        bg: "white.100",
+                      }}
                     >
                       {menu.name}
                     </Button>

@@ -8,5 +8,4 @@ export const PAGE_PATH_KEYS = {
   WORK_EXPERIENCE: "/work-experience",
   EDUCATION: "/education",
   RESUME: "/resume",
-  CERTIFICATIONS_COURSES: "/certifications-courses",
 };

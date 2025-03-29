@@ -1,11 +1,11 @@
-import { PageWrapper } from "@/utils";
-import { Text } from "@chakra-ui/react";
 import React from "react";
+import { PageWrapper } from "@/utils";
+import EducationCmp from "./_layouts/educationCmp";
 
 const Education = () => {
   return (
     <PageWrapper>
-      <Text>Education</Text>
+      <EducationCmp />
     </PageWrapper>
   );
 };
