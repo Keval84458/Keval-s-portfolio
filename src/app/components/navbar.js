@@ -70,7 +70,8 @@ const Navbar = () => {
           display="flex"
           onClick={onOpen}
         />
-        <Box
+
+        <Text
           as={Link}
           href={PAGE_PATH_KEYS.HOME}
           fontWeight="bold"
@@ -79,7 +80,7 @@ const Navbar = () => {
           mx="1rem"
         >
           FRONTEND DEVELOPER
-        </Box>
+        </Text>
       </Flex>
 
       <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
