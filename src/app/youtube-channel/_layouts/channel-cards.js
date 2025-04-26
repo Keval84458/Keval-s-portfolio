@@ -27,25 +27,25 @@ const ChannelCards = () => {
       id: "Carousal&Sliders",
       thumbnail: "/assets/youtubeThumbnails/Sliders.png",
       title: "Carousal & Sliders",
-      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
+      link: "https://youtube.com/playlist?list=PLidl7_qEMHZNOhq-LrSKM4gERuaHlosl7&si=pzG83Fqrgc3PGyvU",
     },
     {
       id: "Notification&Modals",
       thumbnail: "/assets/youtubeThumbnails/Notification.png",
       title: "Notification & Modals",
-      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
+      link: "https://youtube.com/playlist?list=PLidl7_qEMHZPddeElYE11dEbYzHSMjZ6e&si=P4n0E92Wn0xXKkk7",
     },
     {
       id: "Animation&Effect",
       thumbnail: "/assets/youtubeThumbnails/Animations.png",
       title: "Notification & Modals",
-      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
+      link: "https://youtube.com/playlist?list=PLidl7_qEMHZNlGiO-eEhCCBhQllE3_vcl&si=8KJ-ltVcHZTDhUpy",
     },
     {
       id: "Others",
       thumbnail: "/assets/youtubeThumbnails/Others.png",
       title: "Notification & Modals",
-      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
+      link: "https://youtube.com/playlist?list=PLidl7_qEMHZP2mdqcD9OWmclQWPEd7wbn&si=Ocd0KrDTl5Sf0YJW",
     },
   ];
   return (
