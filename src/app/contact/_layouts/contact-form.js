@@ -20,6 +20,7 @@ import { FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { FiDownload } from "react-icons/fi";
 
 const ContactForm = () => {
   const [email] = useState("kevalmakvana84458@gmail.com");
@@ -110,76 +111,101 @@ const ContactForm = () => {
 
   return (
     <>
-      <Box maxW="400px" mx="auto">
-        <Text
-          fontSize="175"
-          fontWeight="extrabold"
-          textAlign="center"
-          mb=".5rem"
-        >
-          CONTACT INFORMATION
-        </Text>
-        <InputGroup>
-          <InputLeftElement pointerEvents="none">
-            <MdEmail size="1.4rem" />
-          </InputLeftElement>
+      <Box
+        mx={{ base: "auto", md: 0 }}
+        display={{ base: "block", md: "flex" }}
+        gap="4rem"
+      >
+        <Box w={{ base: "100%", md: "50%" }}>
+          <Text
+            fontSize={{ base: "125", sm: "150", md: "175" }}
+            transition="all .5s ease"
+            fontWeight="extrabold"
+            mb=".5rem"
+          >
+            CONTACT INFORMATION
+          </Text>
+          <InputGroup>
+            <InputLeftElement pointerEvents="none">
+              <MdEmail size="1.4rem" />
+            </InputLeftElement>
 
-          <Input ref={inputRef} value={email} px="2.2rem" readOnly border={0} />
+            <Input ref={inputRef} value={email} readOnly border={0} />
 
-          <InputRightElement width="4.5rem">
-            <Button
-              h="1.75rem"
-              size="sm"
-              onClick={handleCopy}
-              bg="primary.50"
-              color="white.100"
+            <InputRightElement width="4.5rem">
+              <Button
+                h="1.75rem"
+                size="sm"
+                onClick={handleCopy}
+                bg="primary.50"
+                color="white.100"
+              >
+                Copy
+              </Button>
+            </InputRightElement>
+          </InputGroup>
+
+          <InputGroup mt=".7rem">
+            <InputLeftElement pointerEvents="none">
+              <FaPhone size="1.1rem" />
+            </InputLeftElement>
+
+            <Input value={phone} px="2.2rem" readOnly border={0} />
+          </InputGroup>
+
+          <InputGroup mt=".7rem">
+            <InputLeftElement pointerEvents="none">
+              <FaLocationDot size="1.2rem" />
+            </InputLeftElement>
+
+            <Input value={location} px="2.2rem" readOnly border={0} />
+          </InputGroup>
+          <Box mt="1.5rem">
+            <Text
+              fontSize={{ base: "125", sm: "150", md: "175" }}
+              transition="all .5s ease"
+              fontWeight="extrabold"
+              my=".5rem"
             >
-              Copy
-            </Button>
-          </InputRightElement>
-        </InputGroup>
-
-        <InputGroup mt=".7rem">
-          <InputLeftElement pointerEvents="none">
-            <FaPhone size="1.1rem" />
-          </InputLeftElement>
-
-          <Input value={phone} px="2.2rem" readOnly border={0} />
-        </InputGroup>
-
-        <InputGroup mt=".7rem">
-          <InputLeftElement pointerEvents="none">
-            <FaLocationDot size="1.2rem" />
-          </InputLeftElement>
-
-          <Input value={location} px="2.2rem" readOnly border={0} />
-        </InputGroup>
-      </Box>
-
-      <Box mt="1.5rem">
-        <Text
-          fontSize="125"
-          fontWeight="extrabold"
-          textAlign="center"
-          my=".5rem"
-        >
-          SOCIAL & PROFESSIONAL LINKS
-        </Text>
-        <Box display="flex" justifyContent="center" alignItems="center">
-          {socialLinks.map((social, inx, arr) => {
-            return (
-              <>
-                <Text
-                  as={Link}
-                  href={social.link}
-                  mr=".5rem"
-                  color={social.color}
-                >
-                  {social.icon}
-                </Text>
-              </>
-            );
-          })}
+              SOCIAL & PROFESSIONAL LINKS
+            </Text>
+            <Box display="flex" justifyContent="center" alignItems="center">
+              {socialLinks.map((social, inx, arr) => {
+                return (
+                  <>
+                    <Text
+                      as={Link}
+                      href={social.link}
+                      mr=".5rem"
+                      color={social.color}
+                    >
+                      {social.icon}
+                    </Text>
+                  </>
+                );
+              })}
+            </Box>
+          </Box>
+        </Box>
+        <Box w={{ base: "100%", md: "50%" }} mt={{ base: "2rem", md: 0 }}>
+          <Text
+            fontSize={{ base: "125", sm: "150", md: "175" }}
+            transition="all .5s ease"
+            fontWeight="extrabold"
+          >
+            Click Here to Download My Resume
+          </Text>
+          <Button
+            as="a"
+            href="/assets/Resume/KEVAL CV.pdf"
+            download="KEVAL CV.pdf"
+            leftIcon={<FiDownload />}
+            colorScheme="blue"
+            variant="solid"
+            my={2}
+          >
+            Download Resume
+          </Button>
         </Box>
       </Box>
     </>

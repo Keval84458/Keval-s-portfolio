@@ -27,7 +27,12 @@ const CardCMP = ({ ytDetails }) => {
             borderRadius="lg"
           />
           <Stack mt="2" spacing="3">
-            <Heading size="md" fontFamily="body">
+            <Heading
+              size="md"
+              fontFamily="body"
+              fontSize={{ base: "125", sm: "125", md: "125" }}
+              transition="all .5s ease"
+            >
               {ytDetails.title}
             </Heading>
             <Button

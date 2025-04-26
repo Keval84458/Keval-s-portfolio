@@ -1,33 +1,31 @@
 "use client";
 import React from "react";
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image, Button } from "@chakra-ui/react";
 import Link from "next/link";
+import { FaYoutube } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
     <>
-      <Box>
-        <Box display="flex" justifyContent="center" alignItems="center">
+      <Box display={{ base: "block", md: "flex" }} gap="1rem">
+        <Box w={{ base: "100%", sm: "100%", md: "35%" }}>
           <Image
+            mx="auto"
             src="/assets/DSC_0010.JPG"
-            width="300px"
-            height="350x"
+            width={{ base: "300px", sm: "300px", md: "350px" }}
+            height={{ base: "400px", sm: "400px", md: "500px" }}
             alt="Profile Photo"
-            roundedTopLeft="4rem"
-            roundedBottomRight="4rem"
+            rounded="5rem"
             transition="all .5s ease"
             _hover={{
-              roundedTopLeft: 0,
-              roundedBottomRight: 0,
-              roundedTopRight: "4rem",
-              roundedBottomLeft: "4rem",
+              rounded: "1rem",
             }}
           />
         </Box>
-        <Box>
+        <Box w={{ base: "100%", sm: "100%", md: "65%" }}>
           <Text
-            textAlign="center"
-            fontSize="300"
+            textAlign={{ base: "center", md: "left" }}
+            fontSize={{ base: "250", sm: "300", md: "300", lg: "400" }}
             fontWeight="extrabold"
             color="primary.70"
             lineHeight="3rem"
@@ -35,11 +33,16 @@ const HeroSection = () => {
           >
             KEVAL MAKVANA
           </Text>
-          <Text p=".5rem" fontSize="125">
-            A Frontend Web Developer with 1 year of experience, specializing in
-            React.js, Next.js, Chakra UI, and MUI. Passionate about building
-            modern, responsive, and high-performance web applications. Also runs
-            a YouTube channel,
+          <Text
+            px={{ base: "1rem", md: 0 }}
+            fontSize={{ base: "125", md: "150" }}
+            mt="1rem"
+          >
+            Passionate Frontend Developer with 6 months of internshipexperience
+            specializing in React.js and Next.js. Proficient in
+            craftingresponsive and user-friendly web interfaces using modern
+            UIlibraries like Chakra UI, Material UI (MUI), and more.I also run a
+            tech-focused YouTube channel,{" "}
             <Text
               fontWeight="extrabold"
               as={Link}
@@ -50,9 +53,28 @@ const HeroSection = () => {
             >
               Tech with Keval
             </Text>
-            sharing in-depth tutorials and insights on frontend development and
-            the latest web technologies.
+            , whereI create tutorials and content to simplify web
+            developmentconcepts. Strong focus on clean design, performance,
+            andaccessibility in every project I build.
           </Text>
+          <Box mt={{ base: "0", md: "1rem" }} px={{ base: "1rem", md: 0 }}>
+            <Text fontSize="200">Youtube Channel</Text>
+            <Button
+              as={Link}
+              href="https://www.youtube.com/@techwithkeval2211"
+              fontSize="125"
+              p="1.5rem"
+              bg="primary.40"
+              rounded="full"
+              transition="all .5s ease"
+              _hover={{ boxShadow: "0px 0px 20px 5px rgba(56, 178, 172, 0.7)" }}
+              gap={2}
+              color="white.100"
+            >
+              <FaYoutube size="1.5rem" />
+              Tech with Keval
+            </Button>
+          </Box>
         </Box>
       </Box>
     </>
