@@ -4,7 +4,7 @@ import HeroSection from "./components/hero-section";
 export default function Home() {
   return (
     <>
-      <PageWrapper>
+      <PageWrapper p="1rem">
         <HeroSection />
       </PageWrapper>
     </>

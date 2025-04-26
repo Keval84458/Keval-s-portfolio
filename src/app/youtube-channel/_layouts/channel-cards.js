@@ -14,26 +14,38 @@ const ChannelCards = () => {
     {
       id: "ReactJs",
       thumbnail: "/assets/youtubeThumbnails/ReactJs.png",
-      title: "React.js Beginner to Advanced Full Course | 2025",
+      title: "React Js full course 2025",
       link: "https://youtube.com/playlist?list=PLidl7_qEMHZMHTGZeyzEkuqGP2m-CCifM&si=WP5XWmEcA3uzL4kK",
     },
     {
       id: "Deprecated",
       thumbnail: "/assets/youtubeThumbnails/RIP.png",
-      title: "Create React App is officially Deprecated",
+      title: "Create React App is Deprecated",
       link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
     },
     {
-      id: "ReactIcons",
-      thumbnail: "/assets/youtubeThumbnails/reacticons.png",
-      title: "How to install React-Icons in React",
-      link: "https://youtu.be/TrNGrsJrQsg?si=u0u2VosxwSU_jBSs",
+      id: "Carousal&Sliders",
+      thumbnail: "/assets/youtubeThumbnails/Sliders.png",
+      title: "Carousal & Sliders",
+      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
     },
     {
-      id: "TypewriterEffect",
-      thumbnail: "/assets/youtubeThumbnails/typewriter123.png",
-      title: "Typewriter effect in React Js",
-      link: "https://youtu.be/UcxdhEIvWPw?si=dA3v-n3iI6AKJIHt",
+      id: "Notification&Modals",
+      thumbnail: "/assets/youtubeThumbnails/Notification.png",
+      title: "Notification & Modals",
+      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
+    },
+    {
+      id: "Animation&Effect",
+      thumbnail: "/assets/youtubeThumbnails/Animations.png",
+      title: "Notification & Modals",
+      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
+    },
+    {
+      id: "Others",
+      thumbnail: "/assets/youtubeThumbnails/Others.png",
+      title: "Notification & Modals",
+      link: "https://youtu.be/6OGyZRmOYg4?si=wV-PkZpBOwSJXsyf",
     },
   ];
   return (
@@ -52,12 +64,14 @@ const ChannelCards = () => {
         <Text textAlign="center" pb="1rem" fontWeight="medium">
           Youtube Channel
         </Text>
-        <SimpleGrid columns={1} spacing={1}>
-          <Box>
-            {youtubeDetails.map((ytDetails, ind, arr) => {
-              return <CardCMP key={ind} ytDetails={ytDetails} />;
-            })}
-          </Box>
+        <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={1}>
+          {youtubeDetails.map((ytDetails, ind, arr) => {
+            return (
+              <Box key={ind}>
+                <CardCMP ytDetails={ytDetails} />
+              </Box>
+            );
+          })}
         </SimpleGrid>
       </Box>
     </>
